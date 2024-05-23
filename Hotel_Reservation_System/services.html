@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-----HITIMANA FABRICE 222010357---->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Service</title>
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style0.css">
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>  
+         <header> 
+        <h1><img src="image/icon.jpg" alt="icon"> Hotel Service</h1>
+                        <div class="col-3 offset">
+    <form class="d-flex" action="searchservice.php" method="GET">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</header>
+<header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="room.html">Rooms</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="customer.html">Customer</a></li>
+        </ul>
+    </nav>
+      
+        <div class="signout">
+            <a href="loginout.html">Sign Out</a>
+        </div>
+        <div>
+            <button type="button" onclick="window.location.href='Dashboard.html'">Back</button>
+    </div> 
+    </header>
+    <style>
+    body {
+      background-image: url('image/1.jpg');
+      background-size: cover; /* Cover the entire background */
+      background-position: center; /* Center the background image */
+      background-repeat: no-repeat; /* Prevent the background image from repeating */
+    }
+  </style>
+</head>
+<body>
+    <main> 
+            <div class="container">
+    <h2>Service Staff Overview</h2>
+    <!-- Add your Service staff overview here -->
+    <div class="Service-staff-content">
+        <p>Welcome to our Hotel Reservation System,</p>
+        <p>Our dedicated Service staff is here to assist you during your stay. In addition to our excellent Service services, we also want to ensure that you have access to comfortable accommodations.</p>
+        <p>Currently, we have a variety of Services available to suit your needs:</p>
+        <p>Whether you're traveling alone, with a partner, or with family, we have the perfect Service for you. Please don't hesitate to reach out to our staff if you have any questions or would like to make a reservation.</p>
+        <p>Thank you for choosing our hotel. We look forward to providing you with an exceptional experience.</p>
+        <p>Sincerely,</p>
+        <p>The Hotel Reservation System Team</p>
+    </div>
+</div>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Add Service Details</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to our Website</h2>
+        <p>Welcome To Hotel -  Available!</p>
+        <form action="services.php" method="POST">
+            <table>
+                <tr>
+                    <td>service_name:</td>
+                    <td><input type="text" name="service_name" id="service_name" oninput="validate()"></td>
+                    <td><div id="errorservice_name"></div></td>
+                </tr>
+                 <tr>
+                    <td>Description:</td>
+                    <td><textarea name="description" id="description" rows="4" cols="30" oninput="validate()"></textarea></td>
+                    <td><div id="errordescription"></div></td>
+                </tr>
+                <tr>
+                    <td>price:</td>
+                       <td><input type="text" name="price" id="price" oninput="validate()"></td>
+                    </td>
+                    <td><div id="errorprice"></div></td>
+                </tr>
+                <tr>
+                    <td>availability:</td>
+                    <td><input type="text" name="availability" id="availability" oninput="validate()"></td>
+                    <td><div id="erroravailability"></div></td>
+                </tr>
+               
+               
+                <tr>
+                    <td><a href="landingService.php" class="btn btn-success">ACTION</a></td>
+
+                    <td><input type="submit" value="Create Account" class="btn"></td>
+    
+                        <td><div id="errorFinal"></div></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>
+
+    </main>
+    <footer>
+        <p>&copy; 2024 Hotel Reservation System. All rights reserved.</p>
+        <div class="social-media">
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">Linkedin</a>
+        </div>
+    </footer>
+</body>
+</html>

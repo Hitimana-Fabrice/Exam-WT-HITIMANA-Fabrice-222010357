@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-----HITIMANA FABRICE 222010357---->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit</title>
+    <script type="text/javascript" src="javascript/updatate.js"></script>
+</head>
+<body>
+<div>
+    <h2>Edit amenity Details</h2>
+    <form action="updateamenity.php" method="POST">
+        <table id="table1">
+            <tr>
+                <td>amenity_id:</td>
+                <td><input type="text" name="amenity_id" id="amenity_id" oninput="validate()"></td>
+                <td><div id="erroramenity_id"></div></td>
+            </tr>
+            <tr>
+                <td>amenity_name:</td>
+                <td><input type="text" name="amenity_name" id="amenity_name" oninput="validate()"></td>
+                <td><div id="erroramenity_name"></div></td>
+            </tr>
+            <tr>
+                <td>description:</td>
+                <td>
+                    <input type="text" name="description" id="description" oninput="validate()"> 
+                </td>
+                <td><div id="errordescription"></div></td>
+            </tr>
+             <tr>
+                <td>category:</td>
+                <td><input type="text" name="category" id="category" oninput="validate()"></td>
+                <td><div id="errorcategory"></div></td>
+            </tr>
+            <tr>
+                <td>price:</td>
+                <td><input type="price" name="price" id="price" oninput="validate()"></td>
+                <td><div id="errorprice"></div></td>
+            </tr>
+           
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Send" class="btn"></td>
+                <td><div id="errorFinal"></div></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

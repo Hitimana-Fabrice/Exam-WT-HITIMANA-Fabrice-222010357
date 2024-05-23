@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-----HITIMANA FABRICE 222010357---->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit</title>
+    <script type="text/javascript" src="javascript/updatate.js"></script>
+</head>
+<body>
+<div>
+    <h2>Edit Customer Details</h2>
+    <form action="updateroom.php" method="POST">
+        <table id="table1">
+            <tr>
+                <td>room_id:</td>
+                <td><input type="text" name="room_id" id="room_id" oninput="validate()"></td>
+                <td><div id="errorroom_id"></div></td>
+            </tr>
+              <tr>
+                    <td>room_number:</td>
+                    <td><input type="text" name="room_number" id="room_number" oninput="validate()"></td>
+                    <td><div id="errorroom_number"></div></td>
+                </tr>
+                <tr>
+                    <td>Room Type:</td>
+                    <td>
+                        <select name="room_type" id="room_type" onchange="validate()">
+                            <option value="">Select room Type</option>
+                            <option value="single">Single</option>
+                            <option value="doable">Dauble</option>
+                            <option value="suite">Suite</option>
+                        </select>
+                    </td>
+                    <td><div id="errorroomType"></div></td>
+                </tr>
+                <tr>
+                    <td>capacity:</td>
+                    <td><input type="text" name="capacity" id="capacity" oninput="validate()"></td>
+                    <td><div id="errorcapacity"></div></td>
+                </tr>
+                  <td>price_per_night:</td>
+                    <td><input type="text" name="price_per_night" id="price_per_night" oninput="validate()"></td>
+                    <td><div id="errorprice_per_night"></div></td>
+                </tr>
+                 <tr>
+                    <td>Description:</td>
+                    <td><input type="description" name="description" id="description" oninput="validate()"></td>
+                    <td><div id="errordescription"></div></td>
+                </tr>
+    
+                    <td></td>
+                <td><input type="submit" value="Send" class="btn"></td>
+                        <td><div id="errorFinal"></div></td>
+            </table>
+        </form>
+</div>
+</body>
+</html>

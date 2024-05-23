@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit</title>
+</head>
+<body>
+<div>
+    <!-----HITIMANA FABRICE 222010357---->
+    <h2>Edit payment Details</h2>
+    <form action="payment.php" method="POST">
+        <table id="table1">
+
+             <tr>
+                    <td>reservation_id :</td>
+                    <td><input type="number" name="reservation_id" id="reservation_id" oninput="validate()"></td>
+                    <td><div id="errorreservation_id "></div></td>
+                </tr>
+                </tr>
+                <tr>
+                    <td>payment_date:</td>
+                    <td><input type="date" name="payment_date" id="payment_date" oninput="validate()"></td>
+                    <td><div id="errorpayment_date"></div></td>
+                </tr>
+                 <tr>
+                    <td>Amaunt:</td>
+                       <td><input type="text" name="payment_amount" id="payment_amount" oninput="validate()"></td>
+                    </td>
+                    <td><div id="erroramount"></div></td></tr>
+                 <tr>
+                    <td>payment_method:</td>
+                    <td>
+                        <select name="payment_method" id="payment_method" onchange="validate()">
+                            <option value="">Select payment_method</option>
+                            <option value="Mobilephone">Mobile phone</option>
+                            <option value="bank">Bank</option>
+                            <option value="CreditCard">Credit Card</option>
+                        </select>
+                    </td>
+                    <td><div id="errorposition"></div></td>
+                </tr>
+                
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Send" class="btn"></td>
+                <td><div id="errorFinal"></div></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

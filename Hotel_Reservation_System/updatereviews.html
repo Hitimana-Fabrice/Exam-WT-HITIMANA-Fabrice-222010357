@@ -1,0 +1,51 @@
+  <!DOCTYPE html>
+<html>
+<head>
+    <!-----HITIMANA FABRICE 222010357---->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit</title>
+    <script type="text/javascript" src="javascript/updatate.js"></script>
+</head>
+<body>
+<div>
+    <h2>Edit review Details</h2>
+    <form action="updatereview.php" method="POST">
+        <table id="table1">
+   <tr>
+                    <td>review_id:</td>
+                    <td><input type="number" name="review_id" id="review_id" oninput="validate()"></td>
+                    <td><div id="errorreview_id"></div></td>
+                </tr>
+                 <tr>
+                    <td>customer_id:</td>
+                    <td>
+                       <input type="number" name="customer_id" id="customer_id" oninput="validate()"> 
+                    </td>
+                    <td><div id="errorcustomer_id"></div></td>
+                </tr>
+                <tr>
+                    <td>Room_id:</td>
+                    <td>
+                       <input type="number" name="room_id" id="room_id" oninput="validate()"> 
+                    </td>
+                    <td><div id="errorroom_id"></div></td>
+                </tr>
+                <tr>
+                    <td>Rating:</td>
+                    <td><input type="text" name="rating" id="rating" oninput="validate()"></td>
+                    <td><div id="errorrating"></div></td>
+                </tr>
+                <tr>
+                    <td>review_text:</td>
+                    <td><input type="text" name="review_text" id="review_text" oninput="validate()"></td>
+                    <td><div id="errorreview_text"></div></td>
+                </tr>
+                                   <td></td>
+                <td><input type="submit" value="update" class="btn"></td>
+                        <td><div id="errorFinal"></div></td>
+            </table>
+        </form>
+</div>
+</body>
+</html>

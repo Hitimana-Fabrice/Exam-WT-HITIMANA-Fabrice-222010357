@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-----HITIMANA FABRICE 222010357---->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>review</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style0.css">
+</head>
+<body>    <header> 
+        <h1><img src="image/icon.jpg" alt="icon"> Hotel review</h1>
+        <div class="search-engine">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+</header>
+<header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="room.html">Rooms</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="customer.html">Customer</a></li>
+            <li><a href="review.html">Reviews</a></li>
+        </ul>
+    </nav>
+      
+        <div class="signout">
+            <a href="loginout.php">Sign Out</a>
+        </div>
+        <div>
+            <button type="button" onclick="window.location.href='Dashboard.html'">Back</button>
+    </div> 
+    </header>
+
+<div class="container">
+    <div class="form-container">
+        <h2>Add New review</h2>
+       <form action="reviews.php" method="POST">
+            <table id="table1">
+                <tr>
+                    <td>Customer_id:</td>
+                    <td><input type="number" name="customer_id" id="customer_id" oninput="validate()"></td>
+                    <td><div id="errorcustomer_id"></div></td>
+                </tr>
+                <tr>
+                    <td>Room_id:</td>
+                    <td>
+                       <input type="number" name="room_id" id="room_id" oninput="validate()"> 
+                    </td>
+                    <td><div id="errorroom_id"></div></td>
+                </tr>
+                <tr>
+                    <td>Rating:</td>
+                    <td><input type="text" name="rating" id="rating" oninput="validate()"></td>
+                    <td><div id="errorrating"></div></td>
+                </tr>
+                <tr>
+                    <td>review_text:</td>
+                    <td><input type="text" name="review_text" id="review_text" oninput="validate()"></td>
+                    <td><div id="errorreview_text"></div></td>
+                </tr>
+                <tr>
+                    <td><a href="landingreview.php" class="btn btn-success">ACTION</a></td>
+
+                    <td><input type="submit" value="Create Account" class="btn"></td>
+    
+                        <td><div id="errorFinal"></div></td>
+                </tr>
+            </table></form>
+    </div>
+</div>
+</div>
+<footer>
+  <p>&copy; 2024 Your Hotel Name. All rights reserved.</p>
+    <div class="social-media">
+        <a href="#">Facebook</a>
+        <a href="#">Twitter</a>
+        <a href="#">Instagram</a>
+    </div>
+</footer>
+</body>
+</html>

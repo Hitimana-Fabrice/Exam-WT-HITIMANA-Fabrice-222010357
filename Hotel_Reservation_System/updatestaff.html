@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-----HITIMANA FABRICE 222010357---->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit</title>
+    <script type="text/javascript" src="javascript/updatate.js"></script>
+</head>
+<body>
+<div>
+    <h2>Edit staff Details</h2>
+    <form action="updatestaff.php" method="POST">
+        <table id="table1">
+            <tr>
+                <td>staff_id:</td>
+                <td><input type="text" name="staff_id" id="staff_id" oninput="validate()"></td>
+                <td><div id="errorstaff_id"></div></td>
+            </tr>
+             <tr>
+                    <td>Name:</td>
+                    <td><input type="text" name="names" id="names" oninput="validate()"></td>
+                    <td><div id="errornames"></div></td>
+                </tr>
+                 <tr>
+                    <td>Position:</td>
+                    <td><input type="text" name="position" id="position" rows="4" cols="30" oninput="validate()"></td>
+                    <td><div id="errorposition"></div></td>
+                </tr>
+                <tr>
+                    <td>Contact_number:</td>
+                       <td><input type="text" name="contact_number" id="contact_number" oninput="validate()"></td>
+                    </td>
+                    <td><div id="contact_number"></div></td>
+                </tr>
+                <tr>
+                    <td>Hire_date:</td>
+                    <td><input type="date" name="hire_date" id="hire_date" oninput="validate()"></td>
+                    <td><div id="errorhire_date"></div></td>
+                </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Send" class="btn"></td>
+                <td><div id="errorFinal"></div></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

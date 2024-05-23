@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-----HITIMANA FABRICE 222010357---->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit</title>
+    <script type="text/javascript" src="javascript/updatate.js"></script>
+</head>
+<body>
+<div>
+    <h2>Edit service Details</h2>
+    <form action="updateservice.php" method="POST">
+        <table id="table1">
+            <tr>
+                <td>service_id:</td>
+                <td><input type="text" name="service_id" id="service_id" oninput="validate()"></td>
+                <td><div id="errorservice_id"></div></td>
+            </tr>
+            <tr>
+                <td>service_name:</td>
+                <td><input type="text" name="service_name" id="service_name" oninput="validate()"></td>
+                <td><div id="errorservice_name"></div></td>
+            </tr>
+            <tr>
+                <td>description:</td>
+                <td>
+                    <input type="text" name="description" id="description" oninput="validate()"> 
+                </td>
+                <td><div id="errordescription"></div></td>
+            </tr>
+            <tr>
+                <td>price:</td>
+                <td><input type="price" name="price" id="price" oninput="validate()"></td>
+                <td><div id="errorprice"></div></td>
+            </tr>
+            <tr>
+                <td>availability:</td>
+                <td><input type="text" name="availability" id="availability" oninput="validate()"></td>
+                <td><div id="erroravailability"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Send" class="btn"></td>
+                <td><div id="errorFinal"></div></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-----HITIMANA FABRICE 222010357---->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Edit</title>
+    <script type="text/javascript" src="javascript/updatate.js"></script>
+</head>
+<body>
+<div>
+    <h2>Edit Customer Details</h2>
+    <form action="updatecustomer.php" method="POST">
+        <table id="table1">
+            <tr>
+                <td>Customer_id:</td>
+                <td><input type="text" name="customer_id" id="customer_id" oninput="validate()"></td>
+                <td><div id="errorcustomer_id"></div></td>
+            </tr>
+            <tr>
+                <td>Names:</td>
+                <td><input type="text" name="names" id="names" oninput="validate()"></td>
+                <td><div id="errorNames"></div></td>
+            </tr>
+            <tr>
+                <td>Contact_number:</td>
+                <td>
+                    <input type="text" name="contact_number" id="contact_number" oninput="validate()"> 
+                </td>
+                <td><div id="errorcontact_number"></div></td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td><input type="email" name="email" id="email" oninput="validate()"></td>
+                <td><div id="errorEmail"></div></td>
+            </tr>
+            <tr>
+                <td>Nationality:</td>
+                <td><input type="text" name="nationality" id="nationality" oninput="validate()"></td>
+                <td><div id="errorNationality"></div></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="submit" value="Send" class="btn"></td>
+                <td><div id="errorFinal"></div></td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

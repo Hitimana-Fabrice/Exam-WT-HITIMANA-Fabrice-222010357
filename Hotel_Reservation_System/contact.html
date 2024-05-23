@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-----HITIMANA FABRICE 222010357---->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reservation</title>
+     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style0.css">
+    <link rel="stylesheet" href="css/style3.css">
+</head>
+<body>  
+         <header> 
+        <h1><img src="image/icon.jpg" alt="icon"> Hotel reservation</h1>
+                        <div class="col-3 offset">
+    <form class="d-flex" action="searchreservation.php" method="GET">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" name="query">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+    </form>
+</header>
+<header>
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="room.html">Rooms</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="amenities.html">Amenities</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="customer.html">Customer</a></li>
+        </ul>
+    </nav>
+      
+        <div class="signout">
+            <a href="loginout.html">Sign Out</a>
+        </div>
+        <div>
+            <button type="button" onclick="window.location.href='Dashboard.html'">Back</button>
+    </div> 
+    </header>
+
+    <main>
+        <section class="contact-section">
+            <div class="container">
+                <h1>Contact Us</h1>
+                <p>Have questions or feedback? Feel free to get in touch with us!</p>
+                <form action="mess.php" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="text" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    <td><a href="landingmessage.php" class="btn btn-success">ACTION</a></td>
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- Include your footer content here -->
+        <p>&copy; 2024 Hotel Reservation System. All rights reserved.</p>
+    </footer>
+</body>
+</html>
